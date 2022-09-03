@@ -4,9 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
-/* Meme Generator */
 .MemeHeader {
   display: flex;
   justify-content: space-between;
@@ -64,9 +61,9 @@
   width: fit-content;
   padding-top: 50px;
   padding-bottom: 20px;
-  
 }
-#upperText, #lowerText {
+#upperText,
+#lowerText {
   margin: 10px;
   padding: 10px 60px 10px 10px;
 
@@ -77,7 +74,22 @@
   border-color: rgba(128, 128, 128, 0.486);
   border-radius: 10px;
   box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.514);
+}
 
+.meme {
+  height: 40vh;
+  width: 60vh;
+  object-fit: contain;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.514);
+}
+
+.meme--div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonDiv {
@@ -103,7 +115,6 @@
   border-radius: 10px;
   box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.514);
   cursor: pointer;
-
 }
 
 #submitButton:hover {
@@ -117,6 +128,32 @@
   width: 95%;
 }
 
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 40px;
+}
+
+.top {
+  top: 40px;
+}
+
 .meme {
   height: 50vh;
   max-width: 50vh;
@@ -125,7 +162,6 @@
   margin: 40px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.514);
-  
 }
 
 @media screen and (max-width: 420px) {
@@ -142,8 +178,9 @@
     height: 120vh;
   }
 
-  #upperText, #lowerText, #submitButton {
+  #upperText,
+  #lowerText,
+  #submitButton {
     font-size: 1.5em;
   }
 }
-

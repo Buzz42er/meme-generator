@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client"; //react 18 syntax before it was r
 
 import "./index.css";
 import MemeApp from "./components/meme-generator/MemeApp";
-import './Meme.css'
+import "./Meme.css";
 
 // pass component to render, and get root element to display it
 // react 18 syntax, container and root
